@@ -1,0 +1,164 @@
+/* Footer */
+.footer {
+  background-color: #181733;
+}
+
+.footer__summary {
+  display: flex;
+  padding: 0 16px;
+}
+
+.footer__summary-part {
+  margin-bottom: 8px;
+}
+
+.footer__part-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 36px;
+}
+
+.footer__part-list {
+  list-style: none;
+}
+
+.footer__part-item {
+  margin-bottom: 12px;
+}
+
+.footer__part-item:hover a {
+  text-decoration: underline;
+}
+
+.footer__part-item a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #bdd1e3;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  margin: 16px;
+  user-select: none;
+}
+
+.footer__logo-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.footer__logo-name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer_corporate {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px;
+}
+
+.footer_corporate-copyright {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
+
+.footer_corporate-copyright span {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.footer_corporate-link-list {
+  display: flex;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.footer_corporate-link-item {
+  border-right: 1px solid #fff;
+}
+
+.footer_corporate-link-item:last-child {
+  border: none;
+}
+
+.footer_corporate-link-item:hover a {
+  text-decoration: underline;
+}
+
+.footer_corporate-link-item a {
+  text-decoration: none;
+  padding: 16px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.footer__footer {
+  width: 100%;
+  height: 24px;
+  background: linear-gradient(90deg, #cd122d 0, #154284);
+}
+
+/* Responsive */
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .footer__footer {
+    height: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__part-title {
+    font-size: 1.7rem;
+  }
+
+  .footer__part-item a {
+    font-size: 1.2rem;
+  }
+
+  .footer_corporate {
+    flex-direction: column;
+  }
+
+  .footer_corporate-link-list {
+    flex-direction: column;
+  }
+
+  .footer_corporate-link-item a {
+    padding: 8px 0;
+    display: inline-block;
+  }
+
+  .footer_corporate-link-item {
+    border-right: none;
+  }
+
+  .footer__logo-image {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer__logo-name {
+    font-size: 2.6rem;
+  }
+
+  .footer_corporate-copyright {
+    font-size: 1.2rem;
+  }
+
+  .footer_corporate-link-item a {
+    font-size: 1.1rem;
+  }
+
+  .footer__footer {
+    height: 12px;
+  }
+}

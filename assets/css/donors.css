@@ -1,0 +1,153 @@
+/* Donors */
+.donors {
+  position: relative;
+  background-image: url(../img/background_donor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 0 0;
+  user-select: none;
+}
+
+.donors__title {
+  font-size: 3.8rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.donors__list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.donors__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.donors__item:hover.donors__item::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.donors__item::after {
+  content: "";
+  position: absolute;
+  background-color: #fec564;
+  bottom: 28px;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.25s linear;
+}
+
+.donors__item-image {
+  width: 150px;
+  display: block;
+}
+
+#Spotify {
+  width: 100px;
+  display: block;
+}
+
+.donors__item-name {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+  padding-right: 32px;
+}
+
+.donors__main {
+  position: absolute;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fec564;
+  top: 45%;
+  transform: translateY(-100%);
+  left: 28px;
+}
+
+.donors::before {
+  content: "";
+  position: absolute;
+  background-color: #fec564;
+  top: 50%;
+  left: 28px;
+  height: 100px;
+  width: 1px;
+}
+
+/* Responsive */
+@media (min-width: 1100px) and (max-width: 1280px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+}
+
+@media (min-width: 840px) and (max-width: 1024px) {
+  .donors__item-name {
+    font-size: 3.2rem;
+  }
+
+  #Spotify {
+    width: 80px;
+  }
+}
+
+@media (max-width: 840px) {
+  .donors__title {
+    font-size: 3rem;
+  }
+
+  .donors__main {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+  .donors::before {
+    top: 50%;
+    left: 10px;
+    height: 2px;
+    width: calc(50% - 80px);
+  }
+
+  .donors::after {
+    content: "";
+    position: absolute;
+    background-color: #fec564;
+    top: 50%;
+    right: 10px;
+    height: 2px;
+    width: calc(50% - 80px);
+  }
+
+  .donors__item-name {
+    font-size: 2.8rem;
+  }
+
+  #Spotify {
+    width: 64px;
+  }
+
+  #nike {
+    width: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .donors__title {
+    font-size: 2.4rem;
+  }
+}

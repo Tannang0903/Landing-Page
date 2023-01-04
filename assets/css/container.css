@@ -1,0 +1,565 @@
+/* Container */
+.container {
+  background-color: #181733;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.container__content {
+  margin: 0 16px;
+  border-radius: 16px;
+  background-color: #fff;
+  overflow: hidden;
+  border: 1px solid #f3f3f3;
+}
+
+.container__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 28px 0;
+}
+
+.container__heading-name {
+  font-size: 3rem;
+  font-weight: 800;
+  user-select: none;
+}
+
+.container__heading-contact {
+  display: flex;
+  align-items: center;
+}
+
+.container__heading-contact-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #a3acc9;
+  margin-right: 24px;
+  padding: 4px 12px;
+  border-right: 1px solid #a3acc9;
+  user-select: none;
+}
+
+.container__heading-contact-img {
+  width: 80px;
+  height: 80px;
+}
+
+.container__navigation {
+  margin: 36px 0 48px;
+  padding: 0 28px;
+}
+
+.container__navigation-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.container__navigation-item {
+  margin: 0 6px;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container__navigation-item:hover {
+  background-color: #154284;
+  transition: 0.3s linear;
+}
+
+.container__navigation-item:hover .container__navigation-link {
+  color: #fff;
+}
+
+.container__navigation-link {
+  display: block;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #000;
+}
+
+/* Container Part */
+.container__part {
+  margin-bottom: 40px;
+  padding: 0 28px;
+}
+
+.container__title {
+  width: 100%;
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: #742956;
+  margin-bottom: 36px;
+}
+
+.container__member-item {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.container__member-item:hover .container__member-info {
+  transform: translateY(0%);
+}
+.container__member-item:hover .container__member-gradient {
+  transform: translateY(-36%);
+}
+
+.container__member-item:hover .container__member-user-name {
+  transform: translateY(-60%);
+}
+
+.container__member-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container__member-user-name {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  font-size: 9rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  opacity: 0.5;
+  transition: all 0.3s linear;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container__member-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  transform: translateY(100px);
+  text-align: center;
+  margin-bottom: 2px;
+  z-index: 6;
+  transition: all 0.3s linear;
+}
+
+.container__member-info-content {
+  padding: 24px 0;
+  margin: 0 16px;
+  border-bottom: 1px solid #a6b2c7;
+}
+
+.container__member-number {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.container__member-firstname {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+
+.container__member-lastname {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.container__member-position {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.achievements__list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.achievements__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 6px;
+}
+
+.container__member-gradient {
+  position: absolute;
+  width: 100%;
+  height: 236px;
+  bottom: -100px;
+  background: linear-gradient(to bottom, transparent 0%, black 30%);
+  opacity: 0.5;
+  z-index: 0;
+  transition: all 0.3s linear;
+}
+
+.achievements__item-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.achievements__item-total-quantities {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.achievements__item-season {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ccc;
+}
+
+.achievements__item-quantities {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fdc52c;
+}
+
+.achievements__coach {
+  width: 100%;
+}
+
+.achievements__coach-item {
+  width: 100%;
+  display: flex;
+}
+
+.achievements__coach-position,
+.achievements__coach-name {
+  width: 50%;
+  min-height: 48px;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ededed;
+  text-align: center;
+  margin-bottom: 4px;
+  border: 1px solid #fff;
+}
+
+.achievements__coach-name {
+  font-weight: 400;
+  background-color: #f3f3f3;
+}
+
+.container__trophies {
+  background-color: #111025;
+  display: flex;
+  padding: 36px 28px;
+  margin: 0 -8px;
+}
+
+.container__trophies-item {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-image: url(../img/background_cup.jpg);
+  margin: 0 8px;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.container__trophies-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 100%;
+  background-color: #000;
+}
+
+.container__trophies-name,
+.container__trophies-type {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.container__trophies-count {
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: #fdc52c;
+  margin-right: 12px;
+}
+
+.container__trophies-image {
+  display: block;
+  max-width: 66px;
+}
+
+/* Responsive */
+@media (min-width: 1100px) and (max-width: 1280px) {
+  /* Container */
+  .container__navigation-link {
+    font-size: 1rem;
+  }
+  /* Container - Part */
+  .container__member-user-name {
+    font-size: 7rem;
+  }
+
+  .container__member-footballShirt {
+    font-size: 2.2rem;
+  }
+
+  .achievements__item-title {
+    font-size: 0.8rem;
+  }
+
+  .achievements__item-total-quantities {
+    font-size: 2.4rem;
+  }
+
+  .achievements__item-season {
+    font-size: 1rem;
+  }
+
+  .achievements__item-quantities {
+    font-size: 1.6rem;
+  }
+
+  .l-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .container__content {
+    margin: 0 16px;
+  }
+
+  .container__navigation-link {
+    font-size: 1rem;
+  }
+
+  /* Container - Part */
+  .container__member-user-name {
+    font-size: 6rem;
+  }
+
+  .achievements__item-title {
+    font-size: 0.8rem;
+    height: 2rem;
+  }
+
+  .achievements__item-total-quantities {
+    font-size: 2.4rem;
+  }
+
+  .achievements__item-season {
+    font-size: 0.8rem;
+  }
+
+  .achievements__item-quantities {
+    font-size: 1.6rem;
+  }
+
+  .l-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 840px) and (max-width: 1024px) {
+  .container__content {
+    margin: 0 16px;
+  }
+
+  .container__navigation-link {
+    font-size: 1rem;
+  }
+
+  /* Container - Part */
+  .container__member-user-name {
+    font-size: 6rem;
+  }
+
+  .achievements__item-title {
+    font-size: 0.9rem;
+    height: 2rem;
+  }
+
+  .achievements__item-total-quantities {
+    font-size: 2.4rem;
+  }
+
+  .achievements__item-season {
+    display: none;
+  }
+
+  .achievements__item-quantities {
+    display: none;
+  }
+
+  .container__member-info {
+    transform: translateY(70px);
+  }
+
+  .l-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 840px) {
+  .container__content {
+    margin: 0 8px;
+  }
+
+  .container__heading {
+    padding: 16px 16px 0;
+  }
+
+  .container__heading-name {
+    font-size: 1.4rem;
+  }
+
+  .container__heading-contact {
+    flex-direction: column;
+  }
+
+  .container__heading-contact-text {
+    border-right: none;
+    margin: 0;
+  }
+
+  .container__heading-contact-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .container__part {
+    padding: 0 12px;
+  }
+
+  .container__navigation-item {
+    margin: 0 3px;
+  }
+
+  .container__navigation-link {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+
+  .container__trophies {
+    display: flex;
+    padding: 12px;
+  }
+
+  .container__trophies-item {
+    height: 188px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .container__trophies-item-content {
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .container__trophies-image {
+    max-width: 360px;
+    height: 66px;
+  }
+
+  .container__trophies-name,
+  .container__trophies-type {
+    margin: 8px 0;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .container__trophies-count {
+    margin: 0;
+  }
+
+  .achievements__item-title {
+    font-size: 0.9rem;
+    height: 2rem;
+  }
+
+  .achievements__item-total-quantities {
+    font-size: 2.4rem;
+  }
+
+  .achievements__item-season {
+    font-size: 0.8rem;
+  }
+
+  .achievements__item-quantities {
+    font-size: 1.6rem;
+  }
+
+  .achievements__coach-position,
+  .achievements__coach-name {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .container__content {
+    margin: 0;
+  }
+
+  .container__title {
+    font-size: 2.4rem;
+  }
+
+  .achievements__coach-position,
+  .achievements__coach-name {
+    font-size: 1.5rem;
+    padding: 0 4px;
+  }
+
+  .container__navigation-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .container__title {
+    font-size: 1.8rem;
+  }
+
+  .achievements__item-title {
+    font-size: 1rem;
+  }
+
+  .achievements__item-total-quantities {
+    font-size: 2.6rem;
+  }
+
+  .achievements__item-season {
+    font-size: 1rem;
+  }
+
+  .achievements__item-quantities {
+    font-size: 1.6rem;
+  }
+
+  .achievements__coach-position,
+  .achievements__coach-name {
+    font-size: 1.3rem;
+    padding: 0 4px;
+  }
+}

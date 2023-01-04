@@ -1,0 +1,121 @@
+/* Contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181733;
+  padding: 36px 16px 100px;
+}
+
+.contact__title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.contact__list {
+  width: 1000px;
+  max-width: 100%;
+}
+
+.contact__item {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.contact__item:hover {
+  outline: 3px solid #fff;
+  transition: outline 0.3s ease;
+}
+
+#facebook {
+  background-color: #3b5998;
+}
+
+#twitter {
+  background-color: #55acee;
+}
+
+#spotify {
+  background-color: #00d365;
+}
+
+#youtube {
+  background-color: #bb0000;
+}
+
+#instagram {
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d);
+}
+
+#onefootball {
+  background-color: #efefef;
+}
+
+#tiktok {
+  background-color: #000;
+}
+
+.contact__icon {
+  display: block;
+  color: #fff;
+  font-size: 2.8rem;
+  margin-bottom: 24px;
+}
+
+.contact__name {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.contact__link {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#spotify .contact__icon,
+#spotify .contact__name,
+#spotify .contact__link,
+#onefootball .contact__icon,
+#onefootball .contact__name,
+#onefootball .contact__link {
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 840px) {
+  .contact__list .col:last-child {
+    margin-left: 33.33333%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact__list .col:last-child {
+    margin-left: 25%;
+  }
+}
