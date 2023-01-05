@@ -28,7 +28,7 @@ sidebarClose.addEventListener("click", () => {
   sidebarSlip.classList.remove("slip__left");
 });
 
-// SideBtn
+// SignBtn
 const signBtnOpen = document.getElementById("SignBtn");
 const signSlip = document.querySelector(".header__action-sign");
 const signBtnClose = document.getElementById("signBtnClose");
@@ -42,7 +42,6 @@ signBtnClose.addEventListener("click", () => {
 });
 
 // Navbar
-
 const navbarBtnOpen = document.getElementById("navbarBtnOpen");
 const navbarSlip = document.querySelector(".middle__nav");
 const navbarBtnClose = document.getElementById("navbarBtnClose");
@@ -53,4 +52,21 @@ navbarBtnOpen.addEventListener("click", () => {
 
 navbarBtnClose.addEventListener("click", () => {
   navbarSlip.classList.remove("slip__right");
+});
+
+// Translator
+const translatorBtnOpen = document.getElementById("translatorBtnOpen");
+const translatorSlip = document.querySelector(".middle__nav-translator");
+const translatorBtnClose = document.getElementById("translatorBtnClose");
+const firstNav = document.querySelector(".middle__first__navigation");
+
+translatorBtnOpen.addEventListener("click", () => {
+  firstNav.classList.add("slip");
+  translatorSlip.classList.add("slip__up");
+});
+
+translatorBtnClose.addEventListener("click", () => {
+  firstNav.classList.add("slip__up");
+  firstNav.classList.remove("slip");
+  translatorSlip.classList.remove("slip__up");
 });
