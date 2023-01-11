@@ -562,4 +562,15 @@
     font-size: 1.3rem;
     padding: 0 4px;
   }
+
+  .achievements__coach-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .achievements__coach-position,
+  .achievements__coach-name {
+    width: 100%;
+    font-size: 1.6rem;
+  }
 }

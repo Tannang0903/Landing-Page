@@ -193,8 +193,8 @@
   }
 
   .l-1_4 {
-    flex: 0 0 14.285%;
-    max-width: 14.285%;
+    flex: 0 0 calc(100% / 7);
+    max-width: calc(100% / 7);
   }
 
   .l-2 {
