@@ -204,14 +204,14 @@
                             </ul>
 
                             <ul class="subitem__chooses">
-                                <li class="subitem__chooses-item"><a href="#!">Men's Football</a></li>
-                                <li class="subitem__chooses-item"><a href="#!">VIP Men's Football</a></li>
-                                <li class="subitem__chooses-item"><a href="#!">Tour & museum</a></li>
-                                <li class="subitem__chooses-item"><a href="#!">Basketball</a></li>
-                                <li class="subitem__chooses-item"><a href="#!">VIP Basketball</a></li>
-                                <li class="subitem__chooses-item"><a href="#!">Women's Football</a></li>
-                                <li class="subitem__chooses-item"><a href="#!">Barcaland</a></li>
-                                <li class="subitem__chooses-item"><a href="#!">Barca Atletic</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Handball</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Fulsal</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Roller-Hockey</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Ice Rink</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Packs and Promotions</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">All about tickets</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Barca Business</a></li>
+                                <li class="subitem__chooses-item"><a href="#!">Barca Cafe</a></li>
                             </ul>
                         </div>
                     </li>
@@ -365,18 +365,23 @@
                     <div class="middle__nav-content">
                         <div class="middle__first__navigation">
                             <ul class="middle__first__navigation-list">
-                                <li class="middle__first__navigation-item">
+                                <li class="middle__first__navigation-item" id="nameclub" onclick="HandlerClick(this)">
                                     <img src="./assets/img/Logo_Barca.png" alt=""
                                         class="middle__first__navigation-image">
                                     <span class="middle__nav-name-club">FC BARCELONA</span>
                                 </li>
-                                <li class="middle__first__navigation-item active">FIRST TEAM</li>
-                                <li class="middle__first__navigation-item">TICKETS & MUSEUM</li>
-                                <li class="middle__first__navigation-item">SHOP</li>
-                                <li class="middle__first__navigation-item">BARÇA TV+</li>
-                                <li class="middle__first__navigation-item">CLUB</li>
-                                <li class="middle__first__navigation-item">BARÇA TEAMS</li>
-                                <li class="middle__first__navigation-item">BARÇA APP</li>
+                                <li class="middle__first__navigation-item" id="firstteams" onclick="HandlerClick(this)">
+                                    FIRST TEAM</li>
+                                <li class="middle__first__navigation-item" id="tickets" onclick="HandlerClick(this)">
+                                    TICKETS & MUSEUM</li>
+                                <li class="middle__first__navigation-item"><a href="#!">SHOP</a></li>
+                                <li class="middle__first__navigation-item" id="barcaTV" onclick="HandlerClick(this)">
+                                    BARÇA TV+</li>
+                                <li class="middle__first__navigation-item" id="club" onclick="HandlerClick(this)">CLUB
+                                </li>
+                                <li class="middle__first__navigation-item" id="barcaTeams" onclick="HandlerClick(this)">
+                                    BARÇA TEAMS</li>
+                                <li class=" middle__first__navigation-item"><a href="#!">BARÇA APP</a></li>
                             </ul>
 
                             <ul class="middle__first__navigation-details">
@@ -386,38 +391,7 @@
                         </div>
 
                         <div class="middle__second__navigation">
-                            <ul class="middle__second__navigation-list">
-                                <li class="middle__second__navigation-item title">
-                                    <a href="#!">First Team</a>
-                                </li>
-                                <li class="middle__second__navigation-item">
-                                    <a href="#!">Latest</a>
-                                </li>
-                                <li class="middle__second__navigation-item">
-                                    <a href="#!">Schedule</a>
-                                </li>
-                                <li class="middle__second__navigation-item">
-                                    <a href="#!">Tickets</a>
-                                </li>
-                                <li class="middle__second__navigation-item">
-                                    <a href="#!">Results</a>
-                                </li>
-                                <li class="middle__second__navigation-item">
-                                    <a href="#!">Standings</a>
-                                </li>
-                                <li class="middle__second__navigation-item active">
-                                    <a href="#!">Players</a>
-                                </li>
-                                <li class="middle__second__navigation-item">
-                                    <a href="#!">Photos</a>
-                                </li>
-                                <li class="middle__second__navigation-item">
-                                    <a href="#!">Honours</a>
-                                </li>
-                                <li class="middle__second__navigation-item">
-                                    <a href="#!">Features</a>
-                                </li>
-                            </ul>
+                            <ul class="middle__second__navigation-list" id="renderData"></ul>
                         </div>
                     </div>
 
@@ -440,6 +414,8 @@
                             <li class="translator__item">Vietnamese</li>
                         </ul>
                     </div>
+
+
                 </div>
             </div>
 
