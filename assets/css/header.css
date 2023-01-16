@@ -823,6 +823,11 @@
   justify-content: space-between;
   width: 50%;
   padding-right: 32px;
+  overflow-y: auto;
+}
+
+.middle__first__navigation::-webkit-scrollbar {
+  display: none;
 }
 
 .middle__first__navigation-item {

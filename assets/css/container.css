@@ -83,7 +83,6 @@
 
 /* Container Part */
 .container__part {
-  margin-bottom: 40px;
   padding: 0 28px;
 }
 
@@ -93,7 +92,7 @@
   font-size: 3.4rem;
   font-weight: 800;
   color: #742956;
-  margin-bottom: 36px;
+  padding: 40px 0;
 }
 
 .container__member-item {
@@ -231,6 +230,7 @@
 
 .achievements__coach {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .achievements__coach-item {
