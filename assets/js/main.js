@@ -1,7 +1,6 @@
 const searchBtn = document.getElementById("search-btn");
 const searchBtnRemove = document.getElementById("search-btnRemove");
 const searchForm = document.getElementById("search-form");
-const searchNav = document.querySelector(".navigation__search");
 
 searchBtn.addEventListener("click", () => {
   searchForm.classList.add("slip__down");
@@ -71,6 +70,7 @@ translatorBtnClose.addEventListener("click", () => {
   translatorSlip.classList.remove("slip__up");
 });
 
+// Data
 const listNameClub = [
   "DON'T MISS",
   "Home",
@@ -174,46 +174,51 @@ const listMiddleContents = document.querySelectorAll(
   ".middle__first__navigation-item"
 );
 
+// Render Data
 function renderData(array) {
   listMiddleContent.innerHTML = "";
-  for (let i = 0; i < array.length; i++) {
-    if (i == 0) {
-      listMiddleContent.innerHTML += `
-      <li class="middle__second__navigation-item title">
-        <a href="#!">${array[i]}</a>
-      </li>
-    `;
-    } else {
-      listMiddleContent.innerHTML += `
-      <li class="middle__second__navigation-item">
-        <a href="#!">${array[i]}</a>
-      </li>
-    `;
+  setTimeout(() => {
+    for (let i = 0; i < array.length; i++) {
+      if (i == 0) {
+        listMiddleContent.innerHTML += `
+        <li class="middle__second__navigation-item title">
+          <a href="#!">${array[i]}</a>
+        </li>
+      `;
+      } else {
+        listMiddleContent.innerHTML += `
+        <li class="middle__second__navigation-item">
+          <a href="#!">${array[i]}</a>
+        </li>
+      `;
+      }
     }
-  }
+  }, 300);
 }
 
 function renderDataPlus(array) {
   listMiddleContent.innerHTML = "";
-  for (let i = 0; i < array.length; i++) {
-    if (i == 0) {
-      listMiddleContent.innerHTML += `
-      <li class="middle__second__navigation-item title">
-        <a href="#!"><span>${array[i]}</span></a>
-      </li>
-    `;
-    } else {
-      listMiddleContent.innerHTML += `
-      <li class="middle__second__navigation-item" id="${array[i]}" onclick="btnToggle(this)">
-        <a href="#!">
-          <span>${array[i]}</span>
-          <i class="fa-solid fa-plus"></i>
-        </a>
-        <ul class="middle__second__navigation-subList"></ul>
-      </li>
-    `;
+  setTimeout(() => {
+    for (let i = 0; i < array.length; i++) {
+      if (i == 0) {
+        listMiddleContent.innerHTML += `
+        <li class="middle__second__navigation-item title">
+          <a href="#!"><span>${array[i]}</span></a>
+        </li>
+      `;
+      } else {
+        listMiddleContent.innerHTML += `
+        <li class="middle__second__navigation-item" id="${array[i]}" onclick="btnToggle(this)">
+          <a href="#!">
+            <span>${array[i]}</span>
+            <i class="fa-solid fa-plus"></i>
+          </a>
+          <ul class="middle__second__navigation-subList"></ul>
+        </li>
+      `;
+      }
     }
-  }
+  }, 300);
 }
 
 function renderSubData(array, content) {
@@ -227,43 +232,38 @@ function renderSubData(array, content) {
   }
 }
 
+// Handler Fuction
 function activeElement(elements) {
   elements.forEach((e) => {
     e.classList.remove("active");
   });
 }
 
+function actionClickNavigation(e) {
+  activeElement(listMiddleContents);
+  e.classList.add("active");
+  checkClassList(listMiddleContent);
+}
+
 function HandlerClick(event) {
   if (event.id === "firstteams") {
     renderData(listFirstTeams);
-    activeElement(listMiddleContents);
-    event.classList.add("active");
-    checkClassList(listMiddleContent);
+    actionClickNavigation(event);
   } else if (event.id === "tickets") {
     renderData(listTicketsandMuseum);
-    activeElement(listMiddleContents);
-    event.classList.add("active");
-    checkClassList(listMiddleContent);
+    actionClickNavigation(event);
   } else if (event.id === "barcaTV") {
     renderData(listBarcaTVs);
-    activeElement(listMiddleContents);
-    event.classList.add("active");
-    checkClassList(listMiddleContent);
+    actionClickNavigation(event);
   } else if (event.id === "club") {
     renderData(listClubs);
-    activeElement(listMiddleContents);
-    event.classList.add("active");
-    checkClassList(listMiddleContent);
+    actionClickNavigation(event);
   } else if (event.id === "barcaTeams") {
     renderDataPlus(listBarcaTeams);
-    activeElement(listMiddleContents);
-    event.classList.add("active");
-    checkClassList(listMiddleContent);
+    actionClickNavigation(event);
   } else if (event.id === "nameclub") {
     renderData(listNameClub);
-    activeElement(listMiddleContents);
-    event.classList.add("active");
-    checkClassList(listMiddleContent);
+    actionClickNavigation(event);
   }
 }
 
